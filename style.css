@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Supermercado One', cursive;
+    /*background-color: #222222;*/
+}
+
+#nav-container {
+    background-image: linear-gradient(gray, lightgray, gray);
+    padding: 25px 139px;
+    height: 60px;
+    justify-content: left;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.inc {
+    display: inline-block;
+    height: 60px;
+    width: 100%;
+    padding-left: 100px;
+}
+
+.inc a {
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    transition: 1s;
+}
+
+.inc a:last-of-type {
+    margin-left: calc(100% - 500px);
+}
+
+.inc a::after {
+    background: purple;
+    width: 0;
+    height: 2px;
+    content: "";
+    display: block;
+    margin: auto;
+    transition: 1s;
+}
+
+.inc a:hover::after {
+    width: 100%;
+}
+
+.main {
+    animation: fadein ease 4s;
+    height: 320px;
+    margin: 70px 130px;
+}
+
+#header {
+    position: relative;
+    margin-top: 0;
+    transform: translateY(-32%);
+    height: 220px;
+    padding-left: 70px;
+    margin-right: 0;
+}
+
+.icon {
+    position: relative;
+    vertical-align: middle;
+    margin: 40px;
+    transform: translateY(-3%) scale(110%);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.social-icons {
+    position: relative;
+    display: inline-flex;
+}
+
+.dropdown-btn {
+    background-color: purple;
+    background-image: url(/svgs/arrow-bar-down.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    margin-left: 88px;
+    transform: translateY(-50px);
+    height: 25px;
+    width: 25px;
+    border-width: 0;
+    border-radius: 50%;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.dropdown-btn:hover {
+    background-color: #3e8e41;
+}
+
+.links {
+    display: none;
+    position: absolute;
+    transform: translate(92px, -25px);
+    min-width: 10%;
+    z-index: 1;
+    overflow: auto;
+}
+
+.links ul {
+    list-style-type: none;
+}
+
+.links a {
+    padding: 5px 0;
+    text-decoration: none;
+    display: block;
+}
+
+.social-icons:hover .links {
+    display: block;
+}
+
+#main-info {
+    display: block;
+    background: gray;
+    position: relative;
+    height: 130px;
+    width: 300px;
+    transform: translate(420px, -260px);
+    font-size: 30px;
+    border-radius: 30px;
+}
+
+.content-NSA {
+    height: 130px;
+    text-decoration: none;
+}
+
+.content-NSA ul {
+    height: 130px;
+    width: 300px;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    list-style: none;
+    /*padding-left: 35px;*/
+    /*padding-top: 10px;*/
+}
+
+.content-NSA ul li {
+    padding-top: 7px;
+}
+
+.content-NSA ul li:first-of-type {
+    padding-top: 2px;
+}
+
+.content-NSA ul li:last-of-type {
+    padding-bottom: 2px;
+}
+
+.content-NSA ul li p {
+    color: black;
+    overflow: hidden;
+    border-right: .10em solid black;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .10em;
+    animation: typ 4s steps(44) 1s 1 normal both, blink 500ms steps(44) infinite;
+}
+
+@keyframes typ {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%
+    }
+}
+
+
+/* The typewriter cursor effect */
+@keyframes blink {
+    from, to {
+        border-color: transparent
+    }
+    50% {
+        border-color: black
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
