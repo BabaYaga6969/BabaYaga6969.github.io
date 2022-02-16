@@ -1,0 +1,22 @@
+.body{
+    background: #dcdcdc;
+}
+
+#nav-container {
+    background: radial-gradient(circle, rgba(255,177,0,1) 0%, rgba(167,136,58,1) 50%, rgba(234,255,0,1) 100%);
+}
+
+.main-info {
+    background: linear-gradient(90deg, rgba(202,222,73,1) 0%, rgba(117,167,58,1) 50%, rgba(0,255,173,1) 100%);
+}
+
+.secondary-info {
+    background: linear-gradient(90deg, rgba(0,255,173,1) 0%, rgba(58,81,167,1) 50%, rgba(169,0,255,1) 100%);
+}
+
+#subtle-content {
+    background: linear-gradient(90deg, rgba(169,0,255,1) 0%, rgba(167,58,123,1) 50%, rgba(255,0,97,1) 100%);
+}
+.dropdown-btn{
+    background-color: #ffcb65;
+}

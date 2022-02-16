@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +8,13 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="keywords" content="web design, web development"/>
     <link rel="stylesheet" href="style.css ">
+    <link rel="stylesheet" type="text/css" href="light.css" id="theme-link">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap" rel="stylesheet">
     <title>About me site</title>
 </head>
-<body class="palette-white">
+<body class="body">
 <div class="loader">
     <div class="wave"></div>
     <div class="wave"></div>
@@ -27,18 +28,18 @@
     <div class="wave"></div>
 </div>
 <section id="nav-container">
+    <div class="theme-button" id="theme-button">Change theme</div>
+    <script src="theme.js"></script>
     <div class="inc">
         <ul>
-            <li id="1"><a href="">Denzel.Inc</a></li>
+            <li id="1"><a href="">Bulgakov.Inc</a></li>
             <li><a id="2" href="">My Top-list</a></li>
         </ul>
     </div>
 </section>
 <section id="header">
     <div class="main">
-        <div class="ava">
-            <img src="site/dog.jpg" alt="Avatar" class="icon">
-        </div>
+        <img src="site/dog.jpg" alt="Avatar" class="icon">
         <div class="social-icons">
             <button class="dropdown-btn"></button>
             <div id="dropdown" class="links">
@@ -54,16 +55,30 @@
 </section>
 <section id="about-me">
     <div class="main-info">
-        <h1 class="content1">Name: Denis</h1>
-        <h1 class="content2">Surname: Bulgakov</h1>
-        <h1 class="content3">Age: 17</h1>
+        <h1 class="content1">Имя: Денис</h1>
+        <h1 class="content2">Фамилия: Булгаков</h1>
+        <h1 class="content3">Возраст: 17</h1>
     </div>
     <div class="secondary-info">
-        <h1 class="content4">Country: Russia</h1>
-        <h1 class="content5">City: Moscow</h1>
-        <h1 class="content6">School: 1581</h1>
+        <h1 class="content4">Страна: Россия</h1>
+        <h1 class="content5">Город: Москва</h1>
+        <h1 class="content6">Школа: 1581</h1>
     </div>
-    <script src="bob.js"></script>
 </section>
+<section id="subtle-content">
+    <div class="subtle">
+        <h1>Обо мне:</h1>
+        <ul>
+            <li><p class="content7">Я увлекаюсь программированием на python и на данный момент не могу похвастаться
+                знаниями ни в одной другой сфере, но очень хочу изучить как frontend, так и в backend разработку :)</p>
+            </li>
+            <li><p class="content8">Из-за ковида очень многое поменялось в жизни, и я открыл для себя невероятное
+                количество книг, фильмов, сериалов и музыки для себя, от которых я без ума!</p></li>
+            <li><p class="content9">Сейчас активно готовлюсь к ЕГЭ по математике, русскому и информатике, поэтому не
+                хватает времени заниматься всем, что интересно</p></li>
+        </ul>
+    </div>
+</section>
+<script src="bob.js"></script>
 </body>
 </html>
